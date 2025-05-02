@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zonas del Océano</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="credits">
+    Escuela Secundaria José Font N° 21 - 5°A<br>
+    Por: Damián Molina y Mateo Meana
+  </div>  
+  <div class="bubbles"></div>
+  <section class="zone epipelagica">
+    <h1>Zona Epipelágica (0 - 200 m)</h1>
+    <p>La parte superior del océano, donde llega la luz solar. Aquí viven la mayoría de los peces que conocemos.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Anemone_purple_anemonefish.jpg/250px-Anemone_purple_anemonefish.jpg" alt="Pez payaso" data-zone="epipelagica">
+  </section>
+  <section class="zone mesopelagica">
+    <h1>Zona Mesopelágica (200 - 1,000 m)</h1>
+    <p>Zona crepuscular. Hay poca luz y criaturas adaptadas a la oscuridad, como calamares gigantes.</p>
+    <img src="https://www.cibsub.cat/rcs_gene//small/Solmissus_albescens002_1.jpg" alt="Solmissus albescens" data-zone="mesopelagica">
+  </section>
+  <section class="zone batipelagica">
+    <h1>Zona Batipelágica (1,000 - 4,000 m)</h1>
+    <p>Oscuridad total. Aquí habitan peces abisales con luces bioluminiscentes.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sternoptyx_diaphana1.jpg/250px-Sternoptyx_diaphana1.jpg" alt="Pez hacha" data-zone="batipelagica">
+  </section>
+  <section class="zone abisopelagica">
+    <h1>Zona Abisopelágica (4,000 - 6,000 m)</h1>
+    <p>Presión enorme. Muy poca vida conocida, organismos extremófilos.</p>
+    <img src="https://www.iberdrola.com/documents/153844/1200366/Fauna_Abisal_746x419.jpeg/04c36a9e-c3c1-6965-2d07-d127bb1de04e?t=1639048934714" alt="Zona abisal" data-zone="abisopelagica">
+  </section>
+  <section class="zone hadal">
+    <h1>Zona Hadal (6,000 - 11,000 m)</h1>
+    <p>La zona más profunda, en fosas oceánicas. Criaturas casi alienígenas viven aquí.</p>
+    <img src="https://www.newsherald.com/gcdn/authoring/2018/02/03/NTNH/ghows-DA-645383b4-7587-20e9-e053-0100007ffe0c-c5213c49.jpeg?width=660&height=416&fit=crop&format=pjpg&auto=webp" alt="Snailfish hadal" data-zone="hadal">
+  </section>
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <div id="modal-text"></div>
+    </div>
+  </div>
+</body>
+</html>
