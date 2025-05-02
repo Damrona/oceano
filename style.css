@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+  background: black;
+  overflow-x: hidden;
+}
+
+.credits {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 8px 12px;
+  border-radius: 8px;
+  z-index: 1000;
+  text-align: center;
+}
+
+
+.zone {
+  padding: 50px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+img {
+  margin-top: 20px;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.epipelagica { background-image: url('https://cdn.discordapp.com/attachments/1367293507836051459/1367294118304157786/Sunlight_Zone.webp?ex=681609a0&is=6814b820&hm=e605c48c9904c8b2e3a9c39f281b8939375bd23e6b7139dc123f5cab79164f77&'); }
+.mesopelagica { background-image: url('https://cdn.discordapp.com/attachments/1367293507836051459/1367294118723715144/Lanternfish.webp?ex=681609a1&is=6814b821&hm=fc5ec90e3e23942e32981584d11e23bc84c6e77deae94fd686a1ba04de7ea17d&'); }
+.batipelagica { background-image: url('https://cdn.discordapp.com/attachments/1367293507836051459/1367294119164248087/Vampire_Squid.webp?ex=681609a1&is=6814b821&hm=8cc131564d30f3d6af3da99713d6d51fbdc99fd4c5c40862929abbf41658b71b&'); }
+.abisopelagica { background-image: url('https://cdn.discordapp.com/attachments/1367293507836051459/1367294119633879201/Abyssal_Zone.webp?ex=681609a1&is=6814b821&hm=365c4f6be7c615c8ab6c7e398289089004a422871a519ebd4d92db0347178350&'); }
+.hadal { background-image: url('https://cdn.discordapp.com/attachments/1367293507836051459/1367294120095256586/Hadal_Zone.webp?ex=681609a1&is=6814b821&hm=8632df0541787188a791d23333d53bd9581f5753937463d69d76687dd1db34dd&'); }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background: #002c3e;
+  color: white;
+  padding: 30px;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+#close-modal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.hidden { display: none; }
+
+.bubbles::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('https://i.gifer.com/5Dpv.gif') repeat;
+  background-size: 300px;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.credits {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 8px 12px;
+  border-radius: 8px;
+  z-index: 1000;
+  text-align: center;
+}
+
+.zone {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.zone.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
